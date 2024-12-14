@@ -8,8 +8,4 @@ cc_library_shared {
         "libcutils",
         "libutils",
     ],
-    include_dirs: select(soong_config_variable("OPLUS_LINEAGE_VIBRATOR_HAL", "INCLUDE_DIR"), {
-        any @ flag_val: [flag_val],
-        default: [],
-    }),
 }
